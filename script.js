@@ -116,7 +116,7 @@ if (id) {
     data[key] = value;
   }
 
-  data.action = "cancel";
+  data.action = "canceltest";
 
   try {
     const response = await fetch("/api/henko-form", {
@@ -153,7 +153,7 @@ if (id) {
       data[key] = value;
     }
 
-    data.action = "update"; // ← 変更処理として識別
+    data.action = "updatetest"; // ← 変更処理として識別
     data.selectedDateTime = `${data.date || ""} ${data.time || ""}`;
 
     try {
