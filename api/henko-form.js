@@ -1,9 +1,9 @@
 export default async function handler(req, res) {
-  const GAS_BASE_URL = "https://script.google.com/macros/s/AKfycbw0xAlekbbME08YaiMQMMB5ngfCDaMEWXicbyU1VlFl8quo1srYmibMD6BPWjdzj_Tb7g/exec";
+  const GAS_BASE_URL = "https://script.google.com/macros/s/AKfycbzQOQb_ZRe9WzjRELQS6SDb7sRHP6h92tEcirk90mQGMsNi41YsrjsmylRmKlx95r8X/exec";
 
   if (req.method === "GET") {
   const { id } = req.query;
-  const GAS_URL = `${GAS_BASE_URL}?id=${id}&action=getReservation`;
+  const GAS_URL = `${GAS_BASE_URL}?id=${id}&action=getReservationtest`;
 
   try {
     const response = await fetch(GAS_URL);
