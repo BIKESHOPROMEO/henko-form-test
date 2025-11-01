@@ -31,7 +31,7 @@ function formatJapaneseDate(dateStr, rawTimeStr) {
 }
 
 if (id) {
-  fetch(`/api/henko-form?id=${id}&action=getReservation`)
+  fetch(`/api/henko-form?id=${id}&action=getReservationtest`)
     .then(res => res.json())
     .then(data => {
   if (data && data.id) {
@@ -86,7 +86,7 @@ if (id) {
   // 日時変更ボタンの動作
   document.getElementById("changeDateBtn").addEventListener("click", () => {
   if (id) {
-    const url = new URL("https://henko-calendar.vercel.app/");
+    const url = new URL("https://henko-calendar-test.vercel.app/");
     url.searchParams.set("id", id); // ← 予約ID
     url.searchParams.set("originalDate", selectedDate); // ← 元の予約日
     url.searchParams.set("originalTime", selectedTime); // ← 元の予約時間
