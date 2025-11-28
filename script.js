@@ -169,7 +169,7 @@ if (id) {
       console.log("fetch成功:", result);
       alert(result.message || "予約内容を変更しました！");
       // ✅ 閉じる案内ダイアログを表示
-      document.getElementById("closeDialog").style.display = "block";      
+      document.getElementById("completeDialog").style.display = "block";      
       this.textContent = "送信完了！"; // ← ボタンのラベル変更
       this.classList.add("submitted"); // ← CSSで見た目変える用
     } catch (err) {
