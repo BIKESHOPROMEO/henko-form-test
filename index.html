@@ -78,13 +78,19 @@ background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0
   <img src="https://i.gifer.com/ZZ5H.gif" alt="読み込み中" width="40" height="40">
 </div>
 <!-- 閉じる案内ダイアログ -->
-<div id="closeDialog" style="display:none; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%);
-background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:999; text-align:center;">
-  <div style="font-size:16px; margin-bottom:10px;">画面は手動で閉じてください。<br>ご利用ありがとうございました。</div>
-  <button id="closeDialogBtn" style="margin-top:10px;">閉じる</button>
-</div>
-
   <script src="script.js" defer></script>
+
+<!-- 完了ダイアログ -->
+<div id="completeDialog" style="display:none; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%);
+background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:999; text-align:center;">
+  <div style="font-size:16px; margin-bottom:10px;">
+    予約が完了しました。<br>予約変更やキャンセルは予約確認メールの<br>URLより変更、キャンセルが可能です。
+  </div>
+  <button style="padding:8px 16px; background:#007BFF; color:#fff; border:none; border-radius:4px;"
+    onclick="window.location.href = 'https://lin.ee/Z2vIdYk';">
+    閉じる案内
+  </button>
+</div>
 
 </body>
 </html>
